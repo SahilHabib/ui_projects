@@ -20,3 +20,56 @@ span:hover{
     font-size: 50px;
     color:lightcoral
 }
+th{
+    font-size: 50px;
+    background-color: burlywood;
+    color: red;
+    text-transform: uppercase; 
+    cursor:pointer;
+}
+th:hover{
+    background-color: springgreen;
+}
+table{
+    border: solid 1px;
+}
+tr{
+    border: solid 1px;
+    color: dodgerblue;
+}
+td{
+    border: solid 1px;
+    color: dodgerblue;
+}
+body{
+    color: brown;
+}
+.w3,.index, .table1{
+    font-size: 20px;
+    color: deepskyblue;
+}
+.UI,.Reference,.Cubic {
+    font-size: 40px;
+    color: brown;
+}
+#border {
+    color: black;
+}
+.Heading {
+    color: brown;
+}
+.Heading:hover {
+    cursor: zoom-in;
+}
+#pointer {
+    background-color: sandybrown;
+}
+.Heading1 {
+    color: brown;
+}
+.Heading1:hover {
+    cursor: zoom-in;
+}
+#pointer1 {
+    background-color: sandybrown;
+}
