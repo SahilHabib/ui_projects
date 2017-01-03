@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+    <html>
+    <head>
+        <title> ContactList  </title>
+        <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.css">
+        </head>        
+        
+        <body>   
+            <h1> Contact List</h1>
+        <form name='Contact list' id="contactInfo">
+            <table class="table table-hover">
+            
+                <div class="row">
+                <div class="col-md-2"> First Name </div>
+                <div class="col-md-3"> <input type="text" class="form-control" name="firstName" id="firstName">
+            </div>
+            </div>
+            
+                <div class="row">
+                <div class="col-md-2"> Last Name </div>
+    
+                <div class="col-md-3"> <input type="text" class="form-control" name="lastName" id="lastName">
+            </div>
+            </div>        
+            
+                <div class="row">
+                <div class="col-md-2"> Contact </div>
+    
+                <div class="col-md-3"> <input type="text" class="form-control" name=lastName id="contact">
+            </div>
+            </div>        
+            
+                <div class="row">
+                <div class="col-md-2"> Email </div>
+    
+                <div class="col-md-3"> <input type="text" class="form-control" name=lastName id="email">
+            </div>
+            </div>
+            <button class="btn btn-success" id="add"> submit </button>
+            </table>
+        </form>
+            
+            <div id="results">
+                <table class="table" id="resultTbl">
+                <caption> Results of new entries</caption>
+                <thead>
+                    <tr>
+                    <th> First Name</th>
+                    <th> Last Name</th>
+                    <th> Contact#</th>
+                    <th> Email</th>
+                    </tr>
+                    </thead>
+                <tbody> 
+                    
+                    </tbody>
+                </table>
+            </div>
+            
+            <script type="text/javascript"
+                    src="/node_modules/jquery/dist/jquery.js"></script>
+            
+            <script type="text/javascript"
+                    src="../scripts.js/person.js"></script>
+            <script type="text/javascript"
+                    src="../scripts.js/append.js"></script>
+            <script type="text/javascript"
+                    src="../scripts.js/events.js"></script>
+            </body>
+        
+    </html>
+        

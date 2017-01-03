@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Bootstrap tutorials </title>    
+        <link rel="stylesheet" href="/node_modules/jquery-ui-dist/jquery-ui.css">
+        <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
+         
+        
+    </head>
+    <body>
+      <!-- Date: <input type="text" id="datepicker">-->
+       <div id="tabs">
+  <ul>
+    <li><a href="#tabs-1">Tab 1</a></li>
+    <li><a href="#tabs-2">Tab 2</a></li>
+    <li><a href="#tabs-3">Tab 3</a></li> 
+  </ul>
+  <div id="tabs-1">
+    <p> tab 1 contents
+        <h1> Contact List</h1>
+        <form name='Contact list' id="contactInfo">
+            <table class="table table-hover">
+            
+                <div class="row">
+                <div class="col-md-2"> First Name </div>
+                <div class="col-md-3"> <input type="text" class="form-control" name="firstName" id="firstName">
+            </div>
+            </div>
+            
+                <div class="row">
+                <div class="col-md-2"> Last Name </div>
+    
+                <div class="col-md-3"> <input type="text" class="form-control" name="lastName" id="lastName">
+            </div>
+            </div>        
+            
+                <div class="row">
+                <div class="col-md-2"> Contact </div>
+    
+                <div class="col-md-3"> <input type="text" class="form-control" name=lastName id="contact">
+            </div>
+            </div>        
+            
+                <div class="row">
+                <div class="col-md-2"> Email </div>
+    
+                <div class="col-md-3"> <input type="text" class="form-control" name=lastName id="email">
+            </div>
+            </div>
+            <button class="btn btn-success" id="add"> submit </button>
+            </table>
+        </form> </p>
+  </div>
+  <div id="tabs-2">
+    <p> <table class="table" id="resultTbl">
+                <caption> Results of new entries</caption>
+                <thead>
+                    <tr>
+                    <th> First Name</th>
+                    <th> Last Name</th>
+                    <th> Contact#</th>
+                    <th> Email</th>
+                    </tr>
+                    </thead>
+                <tbody> 
+                    
+                    </tbody>
+                </table> </p>
+  </div>
+  <div id="tabs-3">
+    <p> Date: <input type="text" id="datepicker"> </p>
+    
+  </div>
+</div>
+    
+    </body>
+         <script type="text/javascript" src="/node_modules/jquery/dist/jquery.js"></script>   
+        <script type="text/javascript" src="/node_modules/jquery-ui-dist/jquery-ui.js"></script>
+        <script type="text/javascript" src="/node_modules/bootstrap/dist/js/"></script>
+        <script type="text/javascript" src="/scripts.js/tabs.js"></script>
+        <script type="text/javascript" src="/scripts.js/person.js"></script>
+        <script type="text/javascript" src="/scripts.js/append.js"></script>
+        <script type="text/javascript" src="/scripts.js/events.js"></script>
+  <!--<script>
+  $( function() {
+    $( "#datepicker" ).datepicker();
+  } );
+  </script>-->
+    
+</html>
