@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+    <html>
+    <head>
+        <title> Forms </title>
+        <link rel="stylesheet" href="style/getform.css">
+        <script type='text/javascript' src="/scripts/process.js"> </script>
+        </head>
+        
+        
+        
+        <body>   
+        <form name='getform' method='Get'>
+            <table>
+            <tr>
+                <td> First Name</td>
+                <td> <input type='Text' placeholder='Enter First Name' name='FirstName' id='FN' value=''></td>
+                <td input onblur="validate()"> <span id="errfn"></span><br> </td>
+                
+                
+                </tr>
+            <tr>
+                <td> Last Name</td>
+                <td> <input type='Text' placeholder='Enter Last Name' name='LastName' id='LN' value=''> </td>
+                <td input onblur="validate()"> <span id="last"></span><br>   </td>
+                
+                
+                </tr>
+            <tr>
+                <td> Address </td>
+                <td> <input type='Text' placeholder='Enter Address' name='Address' id='ADD' value=''></td>
+                <td input onblur="validate()"> <span id="add"></span><br>   </td>
+                
+                </tr>
+            <tr>
+                <td> Password </td>
+                <td> <input type='password' name='Password' id='PASS'></td>
+                <td>  </td>
+                
+                
+                </tr>
+            <tr>
+                <td> Countries </td>
+                <td> <select name='countries' id='countries'>
+                     <option value='1'> Nepal </option>
+                     <option value='2'> America </option>
+                     <option value='3'> Canada </option>
+                    
+                    </select></td>
+                
+                
+                
+                </tr>    
+                <tr> 
+                    <td>  Gender </td>
+                    <td> <input type= 'radio' name='gender' value='male' id='genmale'>Male<br>
+                         <input type='radio' name ='gender' value='female' id='genfemale'>Female<br>
+                         <input type='radio' name='gender' value='others' id='genothers'>Others
+                    </td>
+                </tr>
+                <tr>
+                    <td> Cars </td>
+                <td> <input type='checkbox' id='toyota' value='toyota' name='toyota'>Toyota<br>
+                     <input type='checkbox' id='bmw' value='bmw' name='bmw'>BMW<br>
+                     <input type='checkbox' id='honda' value='honda' name='honda'>Honda<br>
+                     <input type='checkbox' id='nissan' value='nissan' name='nissan'>Nissan
+                    
+                    
+                    </td>
+                
+                
+                </tr>
+            <tr>
+               <td colspan='2'> <input type='submit' onClick='processForm()' value='Form submit'></td> 
+                
+                
+                </tr>
+            </table>
+        </form>
+            <div id='results'> Results will be displayed here </div>
+            </body>
+        
+        
+
+</html>
