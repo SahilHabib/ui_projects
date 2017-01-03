@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+    <html>
+    <head>
+        <title> Forms </title>
+        <link rel="stylesheet" href="style/Assignment3.css">
+        </head>
+        
+        
+        
+        <body>   
+        <form name='getform'>
+            <table>
+            <tr>
+                <td> First Name</td>
+                <td> <input type="Text" id="firstName" name="firstName" placeholder="Enter First Name"></td>
+                <td id="firstNameErr" class="hide"> Please enter your First Name </td>
+                
+                
+                </tr>
+            <tr>
+                <td> Last Name</td>
+                <td> <input type="Text" placeholder="Enter Last Name" name="lastName" id="lastName"> </td>
+                <td id="lastNameErr" class="hide"> PLease enter your LastName </td>
+                
+                
+                </tr>
+            <tr>
+                <td> Address </td>
+                <td> <input type="Text" placeholder="Enter Address" name="address" id="address"></td>
+                <td id="addressErr" class="hide"> Please enter your Address </td>
+                
+                </tr>
+            <tr>
+                <td> Password </td>
+                <td> <input type="password" placeholder="Enter Password" name="password" id="password"></td>
+                <td id="passwordErr" class="hide"> Please enter Password </td>
+                
+                
+                </tr>
+            <tr>
+                <td> Country </td>
+                <td> <select name="country" id="country">
+                    <option value="-1" selected disabled>Select a Country</option>
+                     <option value="1"> Nepal </option>
+                     <option value="2"> America </option>
+                     <option value="3"> Canada </option>
+                    
+                    </select></td>
+                <td id="countryErr" class="hide">
+                    Please select valid Country </td>
+                </tr>    
+                <tr> 
+                    <td>  Gender </td>
+                    <td> <input type= "radio" name="gender" value="male" id="genmale">Male<br>
+                         <input type="radio" name ="gender" value="female" id="genfemale">Female<br>
+                         <input type="radio" name="gender" value="others" id="genothers">Others
+                    </td>
+                    <td id="genderErr" class="hide">
+                    Please enter valid Gender type </td>
+                </tr>
+                <tr>
+                    <td> Cars </td>
+                <td> <input type='checkbox' id='toyota' value='toyota' name='toyota'>Toyota<br>
+                     <input type='checkbox' id='bmw' value='bmw' name='bmw'>BMW<br>
+                     <input type='checkbox' id='honda' value='honda' name='honda'>Honda<br>
+                     <input type='checkbox' id='nissan' value='nissan' name='nissan'>Nissan
+                    </td>
+                    <td id="carsErr" class="hide">
+                    Please enter valid Car type </td>
+                </tr>
+            <tr>
+                <td> <button name="submit" onClick="processForm()" id="submit"> Submit </button></td> 
+                
+                
+                </tr>
+            </table>
+        </form>
+            <div id="results"> Results will be displayed here </div>
+     </body>
+        <script type='text/javascript' src="/scripts/Assignment3.js"> </script>
+</html>
